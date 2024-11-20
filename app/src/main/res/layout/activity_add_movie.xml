@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Movie Thumbnail -->
+            <ImageView
+                android:id="@+id/iv_movie_thumbnail"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_placeholder_image" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_upload_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD POSTER"
+                android:fontFamily="@font/font1"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"/>
+
+            <EditText
+                android:id="@+id/et_ID"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/font1"
+                android:layout_marginTop="10dp"
+                android:hint="Enter ID"
+                android:layout_marginStart="10dp"/>
+
+
+            <!-- Movie Title -->
+            <EditText
+                android:id="@+id/et_movie_title"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:fontFamily="@font/font1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:layout_marginStart="10dp"
+                android:hint="Movie Title"
+                android:inputType="text" />
+
+            <!-- Description -->
+            <EditText
+                android:id="@+id/et_movie_description"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:fontFamily="@font/font1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/custom_input"
+                android:hint="Movie Description"
+                android:inputType="textMultiLine"
+                android:minLines="4" />
+
+            <!-- Rating -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating"
+                android:fontFamily="@font/font1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp" />
+
+            <RatingBar
+                android:id="@+id/rb_movie_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="0.5"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/custom_input"
+                android:numStars="5"
+                android:rating="0" />
+
+            <!-- Release Year -->
+            <EditText
+                android:id="@+id/et_release_year"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:fontFamily="@font/font1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:layout_marginStart="10dp"
+                android:hint="Release Year"
+                android:inputType="number" />
+
+            <!-- Genre -->
+            <EditText
+                android:id="@+id/et_movie_genre"
+                android:layout_width="300dp"
+                android:hint="Genre (e.g., Action, Drama)"
+                android:layout_marginStart="10dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/font1"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:background="@drawable/custom_input"
+                android:inputType="text" />
+
+            <!-- Submit Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_submit_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD MOVIE"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                app:strokeColor="@color/black"
+                android:fontFamily="@font/font1"
+                app:strokeWidth="2dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="#AB886D"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Movie Poster -->
+        <ImageView
+            android:id="@+id/imageViewMoviePoster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Favorite Icon -->
+        <ImageButton
+            android:id="@+id/ibFavorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/favorite1"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/imageViewMoviePoster"
+            android:padding="8dp">
+
+            <!-- Movie Title -->
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/font1"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Write Review Button -->
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/btnWriteReview"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:padding="8dp"-->
+<!--                android:text="Drop Review"-->
+<!--                app:strokeWidth="3dp"-->
+<!--                android:backgroundTint="#AB886D"-->
+<!--                app:strokeColor="@color/white"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                android:fontFamily="@font/font1" />-->
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
