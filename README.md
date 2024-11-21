@@ -1,6 +1,6 @@
-# MovieMuse - Movie App
+# MoviePal - Movie App
 
-MovieMuse is a movie-related app designed to help users explore and manage their movie preferences. With features like creating movie lists, writing journals, reviewing films, and keeping track of your movie-watching journey, MovieMuse is the perfect app for movie lovers.
+MoviePal is a movie-related app designed to help users explore and manage their movie preferences. With features like creating movie lists, writing journals, reviewing films, and keeping track of your movie-watching journey, MoviePal is the perfect app for movie lovers.
 
 ## Features
 
